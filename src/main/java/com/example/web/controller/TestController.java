@@ -8,6 +8,7 @@ public class TestController {
 
     @GetMapping("/home")
     public String toString() {
-        return "";
+        String sc = "copu";
+        return sc;
     }
 }
