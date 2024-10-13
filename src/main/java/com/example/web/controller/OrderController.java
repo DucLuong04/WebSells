@@ -1,14 +1,13 @@
-package com.poly.controller;
+package com.example.web.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.example.web.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.poly.service.OrderService;
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class OrderController {

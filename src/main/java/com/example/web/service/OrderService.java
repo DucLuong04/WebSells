@@ -1,9 +1,9 @@
-package com.poly.service;
+package com.example.web.service;
+
+import com.example.web.entity.Order;
+import com.fasterxml.jackson.databind.JsonNode;
 
 import java.util.List;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.poly.entity.Order;
 
 public interface OrderService {
 	Order create(JsonNode orderData);

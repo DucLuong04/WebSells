@@ -1,19 +1,18 @@
-package com.poly.service.impl;
+package com.example.web.service.impl;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
+import com.example.web.dao.OrderDAO;
+import com.example.web.dao.OrderDetailDAO;
+import com.example.web.entity.Order;
+import com.example.web.entity.OrderDetail;
+import com.example.web.service.OrderService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.poly.dao.OrderDAO;
-import com.poly.dao.OrderDetailDAO;
-import com.poly.entity.Order;
-import com.poly.entity.OrderDetail;
-import com.poly.service.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class OrderServiceImpl implements OrderService {

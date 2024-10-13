@@ -1,8 +1,7 @@
-package com.poly.rest;
+package com.example.web.rest;
 
-import java.util.List;
-import java.util.Optional;
-
+import com.example.web.entity.Account;
+import com.example.web.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.poly.entity.Account;
-import com.poly.service.AccountService;
+import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin("*")
 @RestController
